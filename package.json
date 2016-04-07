@@ -1,6 +1,6 @@
 {
   "name": "crud-fetch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A convenient wrapper for isomorphic-fetch library",
   "main": "fetcher.js",
   "scripts": {
