@@ -1,0 +1,32 @@
+{
+  "name": "fetcher",
+  "version": "0.1.0",
+  "description": "A convenient wrapper for isomorphic-fetch library",
+  "main": "fetcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massanishi/fetcher.git"
+  },
+  "keywords": [
+    "fetch",
+    "fetch api",
+    "es6 fetch",
+    "redux",
+    "react",
+    "request",
+    "angular request",
+    "XMLHttpRequest"
+  ],
+  "author": "massanishi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/massanishi/fetcher/issues"
+  },
+  "homepage": "https://github.com/massanishi/fetcher#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
