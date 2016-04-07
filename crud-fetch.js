@@ -1,10 +1,10 @@
 import fetch from 'isomorphic-fetch';
 
-var fetcher = {};
+var crudFetch = {};
 
-exports.fetcher = fetcher;
+exports.crudFetch = crudFetch;
 
-fetcher.get = function(url) {
+crudFetch.get = function(url) {
   const promise = new Promise((resolve, reject) => {
     fetch(url, {
       method: 'get',
@@ -26,7 +26,7 @@ fetcher.get = function(url) {
   return promise;
 }
 
-fetcher.post = function(url, payload) {
+crudFetch.post = function(url, payload) {
   const promise = new Promise((resolve, reject) => {
     fetch(url, {
       method: 'post',
@@ -49,7 +49,7 @@ fetcher.post = function(url, payload) {
   return promise;
 }
 
-fetcher.put = function(url, payload) {
+crudFetch.put = function(url, payload) {
   const promise = new Promise((resolve, reject) => {
     fetch(url, {
       method: 'put',
@@ -72,7 +72,7 @@ fetcher.put = function(url, payload) {
   return promise;
 }
 
-fetcher.remove = function(url, payload) {
+crudFetch.remove = function(url, payload) {
   const promise = new Promise((resolve, reject) => {
     fetch(url, {
       method: 'delete',

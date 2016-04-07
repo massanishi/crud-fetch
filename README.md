@@ -1,11 +1,11 @@
-# fetcher
+# crud-fetch
 
 A convenient wrapper for isomorphic-fetch.
 
 ## Install
 
 ```sh
-npm install skin-deep
+npm install crud-fetch
 ```
 
 ## Motivation
@@ -16,7 +16,7 @@ It is inspired by Angular $http method for CRUD operation.
 
 ```
 // Simple GET request example:
-fetcher.get('exampleUrl')
+crudFetch.get('exampleUrl')
 .then((body) => {
 	// Successful callback with a response with status.ok is true. That is anything between 200 to 299.
 }).catch(error) => {
@@ -26,7 +26,7 @@ fetcher.get('exampleUrl')
 
 ```
 // Simple POST request example:
-fetcher.post('exampleUrl', {
+crudFetch.post('exampleUrl', {
 	title: 'Sample title',
 	content: 'Sample content'
 })
@@ -39,7 +39,7 @@ fetcher.post('exampleUrl', {
 
 ```
 // Simple PUT request example:
-fetcher.put('exampleUrl', {
+crudFetch.put('exampleUrl', {
 	title: 'New title'
 })
 .then((body) => {
@@ -51,7 +51,7 @@ fetcher.put('exampleUrl', {
 
 ```
 // Simple DELTE request example:
-fetcher.remove('exampleUrl')
+crudFetch.remove('exampleUrl')
 .then((body) => {
 	// Successful callback.
 }).catch(error) => {

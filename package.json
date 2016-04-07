@@ -1,5 +1,5 @@
 {
-  "name": "fetcher",
+  "name": "crud-fetch",
   "version": "0.1.0",
   "description": "A convenient wrapper for isomorphic-fetch library",
   "main": "fetcher.js",
@@ -8,24 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/massanishi/fetcher.git"
+    "url": "git+https://github.com/massanishi/crud-fetch.git"
   },
   "keywords": [
     "fetch",
     "fetch api",
+    "crud fetch",
     "es6 fetch",
     "redux",
     "react",
     "request",
-    "angular request",
     "XMLHttpRequest"
   ],
   "author": "massanishi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/massanishi/fetcher/issues"
+    "url": "https://github.com/massanishi/crud-fetch/issues"
   },
-  "homepage": "https://github.com/massanishi/fetcher#readme",
+  "homepage": "https://github.com/massanishi/crud-fetch#readme",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
   }
