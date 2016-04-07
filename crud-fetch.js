@@ -1,8 +1,8 @@
-import fetch from 'isomorphic-fetch';
+var fetch = require('isomorphic-fetch');
 
 var crudFetch = {};
 
-export default crudFetch;
+module.exports = crudFetch;
 
 crudFetch.get = function(url) {
   const promise = new Promise((resolve, reject) => {

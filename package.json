@@ -1,8 +1,8 @@
 {
   "name": "crud-fetch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A convenient wrapper for isomorphic-fetch library",
-  "main": "fetcher.js",
+  "main": "crud-fetch.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,9 @@
     "request",
     "XMLHttpRequest"
   ],
-  "author": "massanishi",
+  "author": {
+    "name": "massanishi"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/massanishi/crud-fetch/issues"
@@ -28,5 +30,11 @@
   "homepage": "https://github.com/massanishi/crud-fetch#readme",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
-  }
+  },
+  "readme": "# crud-fetch\n\nA convenient wrapper for isomorphic-fetch.\n\n## Install\n\n```sh\nnpm install crud-fetch\n```\n\n## Motivation\n\n## Usage\n\nIt is inspired by Angular $http method for CRUD operation. \n\n```\n// Simple GET request example:\ncrudFetch.get('exampleUrl')\n.then((body) => {\n\t// Successful callback with a response with status.ok is true. That is anything between 200 to 299.\n}).catch(error) => {\n\t// Failure with either network issue, or status.ok is not true. \n}\n```\n\n```\n// Simple POST request example:\ncrudFetch.post('exampleUrl', {\n\ttitle: 'Sample title',\n\tcontent: 'Sample content'\n})\n.then((body) => {\n\t// Successful callback.\n}).catch(error) => {\n\t// Failure. \n}\n```\n\n```\n// Simple PUT request example:\ncrudFetch.put('exampleUrl', {\n\ttitle: 'New title'\n})\n.then((body) => {\n\t// Successful callback.\n}).catch(error) => {\n\t// Failure. \n}\n```\n\n```\n// Simple DELTE request example:\ncrudFetch.remove('exampleUrl')\n.then((body) => {\n\t// Successful callback.\n}).catch(error) => {\n\t// Failure. \n}\n```\n\nThere is a helpful guideline about when the native fetch api responds with status.ok.\n[Fetch living standard](https://fetch.spec.whatwg.org/#concept-status)\n\n\n*Currently supported operations:*\n- GET\n- POST\n- DELETE\n- PUT",
+  "readmeFilename": "README.md",
+  "gitHead": "1d307625238740dc892e0a93005a4d4d45972331",
+  "_id": "crud-fetch@0.1.1",
+  "_shasum": "9bf0a40a6c3798b341cf988cc5580c65d57a3f4f",
+  "_from": "crud-fetch@*"
 }
