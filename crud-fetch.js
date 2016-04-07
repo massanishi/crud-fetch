@@ -2,7 +2,7 @@ import fetch from 'isomorphic-fetch';
 
 var crudFetch = {};
 
-exports.crudFetch = crudFetch;
+export default crudFetch;
 
 crudFetch.get = function(url) {
   const promise = new Promise((resolve, reject) => {
